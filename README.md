@@ -4,4 +4,4 @@ This repo contains example code for the STM32F4 Discovery board y ST Microelectr
 
 Examples:
 	
-	+ USART example with receive interrupt 
++ USART example with receive interrupt 
