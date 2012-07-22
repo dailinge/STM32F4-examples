@@ -2,8 +2,8 @@ TARGET=main.hex
 EXECUTABLE=main.elf
 
 CC=arm-none-eabi-gcc
-LD=arm-none-eabi-ld 
-#LD=arm-none-eabi-gcc
+#LD=arm-none-eabi-ld 
+LD=arm-none-eabi-gcc
 AR=arm-none-eabi-ar
 AS=arm-none-eabi-as
 CP=arm-none-eabi-objcopy
@@ -14,7 +14,7 @@ BIN=$(CP) -O ihex
 DEFS = -DUSE_STDPERIPH_DRIVER -DSTM32F4XX -DMANGUSTA_DISCOVERY -DUSE_USB_OTG_FS -DHSE_VALUE=8000000
 
 MCU = cortex-m4
-MCFLAGS = -mcpu=$(MCU) -mthumb -mlittle-endian -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb-interwork -std=c99
+MCFLAGS = -mcpu=$(MCU) -mthumb -mlittle-endian -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb-interwork -std=c99
 STM32_INCLUDES = -I../../Utilities/STM32F4-Discovery \
 	-I../../Libraries/CMSIS/ST/STM32F4xx/Include/ \
 	-I../../Libraries/CMSIS/Include/ \
@@ -72,7 +72,7 @@ $(TARGET): $(EXECUTABLE)
 	$(CP) -O ihex $^ $@
 
 $(EXECUTABLE): $(SRC) $(STARTUP)
-	$(CC) $(CFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $^ -lm -lc -lnosys -o $@
 
 clean:
 	rm -f Startup.lst  $(TARGET)  $(TARGET).lst $(OBJ) $(AUTOGEN)  $(TARGET).out  $(TARGET).hex  $(TARGET).map \
