@@ -6,3 +6,4 @@ Examples:
 
 + GPIO example featuring setting and reading from IO pins
 + USART example with receive interrupt 
++ I2C Master example showing how to transmit and receive data as a bus Master
