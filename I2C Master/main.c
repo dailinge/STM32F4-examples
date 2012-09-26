@@ -71,10 +71,10 @@ void I2C_start(I2C_TypeDef* I2Cx, uint8_t address, uint8_t direction){
 	 * Master receiver mode, depending on the transmission
 	 * direction
 	 */ 
-	if(direction = I2C_Direction_Transmitter){
+	if(direction == I2C_Direction_Transmitter){
 		while(!I2C_CheckEvent(I2Cx, I2C_EVENT_MASTER_TRANSMITTER_MODE_SELECTED));
 	}
-	else if(direction = I2C_Direction_Receiver){
+	else if(direction == I2C_Direction_Receiver){
 		while(!I2C_CheckEvent(I2Cx, I2C_EVENT_MASTER_RECEIVER_MODE_SELECTED));
 	}
 }
