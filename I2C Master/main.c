@@ -22,7 +22,7 @@ void init_I2C1(void){
 	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7; // we are going to use PB6 and PB7
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;			// set pins to alternate function
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;		// set GPIO speed
-	GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;			// set output to push pull
+	GPIO_InitStruct.GPIO_OType = GPIO_OType_OD;			// set output to open drain --> the line has to be only pulled low, not driven high
 	GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;			// enable pull up resistors
 	GPIO_Init(GPIOB, &GPIO_InitStruct);					// init GPIOB
 	
