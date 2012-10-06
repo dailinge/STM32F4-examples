@@ -28,3 +28,5 @@ Under the following conditions:
 More information on this license can be found [here](http://creativecommons.org/licenses/by/3.0/ "CC BY")
 
 ![CC BY](http://i.creativecommons.org/l/by/3.0/88x31.png)
+
+**Please note that all the library (headers, source code) and startup code files are copyrighted by ST Microelectronics!**
