@@ -1,4 +1,4 @@
-# STM32F4 Discovery tutorials
+# STM32F4 Discovery example code
 
 This repo contains example code for the STM32F4 Discovery board by ST Microelectronics
 
@@ -14,14 +14,14 @@ Examples:
 ###This code is licensed under the Creative Commons Attribution license v3.0
 
 This means that you are free:
-+ *to Share* — to copy, distribute and transmit the work
-+ *to Remix* — to adapt the work
++ **to Share** — to copy, distribute and transmit the work
++ **to Remix** — to adapt the work
 + to make commercial use of the work
 
 Under the following conditions:
-*Attribution* — You must attribute the work in the manner specified by the author or licensor
+**Attribution** — You must attribute the work in the manner specified by the author or licensor
 
-*Attribution* in this case means that you should please provide a link to [Elia's Electronics](http://eliaselectronics.com/ "My blog")
+**Attribution** in this case means that you should please provide a link to [Elia's Electronics](http://eliaselectronics.com/ "My blog")
 
 More information on this license can be found [here](http://creativecommons.org/licenses/by/3.0/ "CC BY")
 
