@@ -8,8 +8,10 @@ and other libc functions from newlib.
 Examples:
 
 + GPIO example featuring setting and reading from IO pins
-+ USART example with receive interrupt 
 + I2C Master example showing how to transmit and receive data as a bus Master
++ SPI example on how to configure the SPI1 peripheral
++ USART example with receive interrupt 
+
 
 ###This code is licensed under the Creative Commons Attribution license v3.0
 
